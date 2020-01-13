@@ -69,15 +69,13 @@ public class NationalRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerVi
             case ListItem.TYPE_HEADER: {
                 HeaderItem header = (HeaderItem) items.get(position);
                 HeaderViewHolder holder = (HeaderViewHolder) viewHolder;
-                // your logic here
+
                 holder.region_text.setText((header.getRegion().getRegion()));
                 break;
             }
             case ListItem.TYPE_EVENT: {
                 EventItem event = (EventItem) items.get(position);
                 EventViewHolder holder = (EventViewHolder) viewHolder;
-                // your logic here
-                //holder.country_text.setText(event.getEvent().getTitle());
 
                 holder.country_text.setText("Country: " + event.getName().getName());
                 holder.capital_text.setText("Capital: " + event.getCapital().getCapital());

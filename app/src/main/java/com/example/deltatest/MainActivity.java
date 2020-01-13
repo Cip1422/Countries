@@ -23,7 +23,7 @@ import java.util.TreeMap;
 
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+
 /**
  * Country
  * {
